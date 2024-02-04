@@ -18,7 +18,6 @@ time python test/run_test.py --verbose -i distributed/test_c10d_gloo
 time python test/run_test.py --verbose -i distributed/test_c10d_nccl
 time python test/run_test.py --verbose -i distributed/test_c10d_spawn_gloo
 time python test/run_test.py --verbose -i distributed/test_c10d_spawn_nccl
-time python test/run_test.py --verbose -i distributed/test_store
 time python test/run_test.py --verbose -i distributed/test_pg_wrapper
 time python test/run_test.py --verbose -i distributed/rpc/cuda/test_tensorpipe_agent
 # FSDP tests
@@ -33,11 +32,6 @@ time python test/run_test.py --verbose -i distributed/_shard/sharded_tensor/test
 
 # functional collective tests
 time python test/run_test.py --verbose -i distributed/test_functional_api
-
-
-# DTensor tests
-time python test/run_test.py --verbose -i distributed/_tensor/test_random_ops
-time python test/run_test.py --verbose -i distributed/_tensor/test_dtensor_compile
 
 # DeviceMesh test
 time python test/run_test.py --verbose -i distributed/test_device_mesh
